@@ -2,7 +2,7 @@
 
 A web application for connecting with your peers by saying bro repeatedly.  Inspired by an app of the same name seen in [this clip](https://youtu.be/OVoFzu-vH4o) from the show Silicon Valley.
 
-The front end was constructed with basic HTML/CSS and JavaScript, and the back end was built using Node.js, and is currently locally hosted on my laptop.
+The front end was constructed with basic HTML/CSS and JavaScript, and the back end was built using Node.js and Socket.io, and is currently locally hosted on my laptop.
 
 I plan on finishing this app in the next few weeks by adding a few more key features, including creating different rooms as users join.  I then plan on hosting the server on either Microsoft Azure or Google Cloud.
 
