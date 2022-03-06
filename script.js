@@ -19,17 +19,17 @@ socket.emit('new-user', newUser)
 
 //When a new message is received from server, prints it to chat log
 socket.on('new-message', data => {
-    printBro(`${data.name}: ${data.message}`)
+    printBro(`${data.name}: ${data.message}`, false)
 })
 
 //Takes in new user's name and prints it to chat log
 socket.on('user-connected', username => {
-    printBro(`${username} connected`)
+    printBro(`${username} connected`, false)
 })
 
 //Tells group when a user disconnects
 socket.on('user-disconnected', username => {
-    printBro(`${username} disconnected`)
+    printBro(`${username} disconnected`, false)
 })
 
 //When the conventional Bro button is pressed, send info to the server with emit
@@ -40,9 +40,9 @@ convBro.addEventListener('submit', e => {
     
     //Prints the new message to your chat log
     if (message != null) {
-        printBro(`You: Bro ${message}`)
+        printBro(`You: Bro ${message}`, true)
     } else {
-        printBro(`You: Bro`)
+        printBro(`You: Bro`, true)
     }
     
 })
@@ -52,9 +52,9 @@ jolBro.addEventListener('submit', e => {
     socket.emit('jolly-emit', message)
 
     if (message != null) {
-        printBro(`You: bro :) ${message}`)
+        printBro(`You: bro :) ${message}`, true)
     } else {
-        printBro(`You: bro :)`)
+        printBro(`You: bro :)`, true)
     }
 })
 
@@ -63,15 +63,23 @@ inqBro.addEventListener('submit', e => {
     socket.emit('inquisitive-emit', message)
 
     if (message != null) {
-        printBro(`You: bro? ${message}`)
+        printBro(`You: bro? ${message}`, true)
     } else {
-        printBro(`You: bro?`)
+        printBro(`You: bro?`, true)
     }
 })
 
 //Prints the message to the chat
-function printBro(printableText) {
+function printBro(printableText, isUser) {
     const newBro = document.createElement('div')
     newBro.innerText = printableText
+
+    //Checks if text is from user. Adjusts CSS accordingly (margins, bg colour)
+    if (isUser == true) {
+        newBro.id = "msg-from-user"
+    } else {
+        newBro.id = "msg-from-other"
+    }
+    
     broContainer.append(newBro)
 }
