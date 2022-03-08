@@ -2,12 +2,14 @@
 
 A web application for connecting with your peers by saying bro repeatedly.  Inspired by an app of the same name seen in [this clip](https://youtu.be/OVoFzu-vH4o) from the show Silicon Valley.
 
-The website was visually styled with plain HTML/CSS, and the functionality was implemented with JavaScript, Node.js, and Socket.io.  The current build is only hosted on my laptop.
+The website was visually styled with plain HTML/CSS, and the functionality was implemented with JavaScript, Node.js, Express.js, and Socket.io.  The current build is only hosted on my laptop, but I plan on getting hosting set up by this afternoon (March 8).
 
-I plan on finishing this app in the next few weeks by adding a few more key features, including creating different rooms as users join.  I will also limit the number of messages that can be visible on the screen concurrently.  I then plan on hosting the server on either Microsoft Azure or Google Cloud, to make testing significantly easier.
+Over the next few days I plan on limiting the amount of messages that can be on the screen concurrently, as they currently keep appending to the bottom of the last message until they go beneath the screen.  I also plan on adding more style to index.ejs, to allow for a better experience as users come to the page and join a room.
 
-I also plan on adding several hidden "bro"s that are slightly more difficult to access, and potentially even a text feature, which is why there are unused "message" variables in script.js.
+
+
+I also plan on adding several hidden "bro"s that are slightly more difficult to access, and potentially even a text input feature, which is why there are unused "message" variables in script.js.
 
 
 Attribution:
-The basic structure of this file was inspired by a [YouTube Video](https://www.youtube.com/watch?v=rxzOqP9YwmM) and its companion [repository](https://github.com/WebDevSimplified/Realtime-Simple-Chat-App) from the channel WebDevSimplified.
+The basic structure of this file was inspired by two videos from a Youtube Series [1](https://www.youtube.com/watch?v=rxzOqP9YwmM), [2](https://www.youtube.com/watch?v=UymGJnv-WsE), and their companion repositories [1](https://github.com/WebDevSimplified/Realtime-Simple-Chat-App), [2](https://github.com/WebDevSimplified/Realtime-Chat-App-With-Rooms) from the channel WebDevSimplified.
