@@ -21,6 +21,16 @@ docker run -p 3000:3000 logantml/bro2bro
 
 # Get shell within the container
 docker exec -it <container id> /bin/bash
+
+Quickstart dev environment:
+```bash
+# Install dependencies
+npm ci
+
+# Run the developement server
+# Accessible at http://localhost:3000
+npm run devStart
+main
 ```
 
 Attribution:
