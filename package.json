@@ -2,6 +2,7 @@
   "name": "bro2bro",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js"
   },
@@ -10,6 +11,7 @@
     "url": "git+https://github.com/LoganTML/Bro2Bro.git"
   },
   "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/LoganTML/Bro2Bro/issues"
   },
