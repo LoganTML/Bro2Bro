@@ -1,4 +1,4 @@
-const socket = io('http://localhost:3000')
+const socket = io('bro2bro.fly.dev')
 
 //Creates variables corresponding to each button
 const convBro = document.getElementById('conv-form')
