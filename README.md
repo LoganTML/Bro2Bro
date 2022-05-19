@@ -11,6 +11,16 @@ Over the next few days I plan on limiting the amount of messages that can be on 
 I also plan on adding several hidden "bro"s that are slightly more difficult to access, and potentially even a text input feature, which is why there are unused "message" variables in script.js.
 
 ## Setup
+Quickstart with Docker:
+```bash
+# Build the docker container
+docker build . -t logantml/bro2bro
+
+# Run the container (add -d to background it)
+docker run -p 3000:3000 logantml/bro2bro
+
+# Get shell within the container
+docker exec -it <container id> /bin/bash
 
 Quickstart dev environment:
 ```bash
@@ -20,6 +30,7 @@ npm ci
 # Run the developement server
 # Accessible at http://localhost:3000
 npm run devStart
+main
 ```
 
 Attribution:
