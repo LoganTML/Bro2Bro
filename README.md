@@ -26,5 +26,7 @@ main
 
 I also plan on adding several hidden "bro"s that are slightly more difficult to access, and potentially even a text input feature, which is why there are unused "message" variables in script.js.
 
+I also plan on adding automated room cleanup, to delete any rooms that have 0 users at any given time, and to add something that automatically deploys to fly again after each save.
+
 Attribution:
 The basic structure of this file was inspired by two videos from a Youtube Series [1](https://www.youtube.com/watch?v=rxzOqP9YwmM), [2](https://www.youtube.com/watch?v=UymGJnv-WsE), and their companion repositories [1](https://github.com/WebDevSimplified/Realtime-Simple-Chat-App), [2](https://github.com/WebDevSimplified/Realtime-Chat-App-With-Rooms) from the channel WebDevSimplified.
